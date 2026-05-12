@@ -3,7 +3,7 @@ const Footer = () => {
     return (
         <>
             <footer id={style.footer}>
-                <img src="../" alt="" />
+                <img src="../imgs/LogoHeader.svg" alt="" />
             </footer>
         </>
     )
