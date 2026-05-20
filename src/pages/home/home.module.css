@@ -1,0 +1,38 @@
+#banner{
+    background-color: var(--fundo-escuro);
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 2%;
+    height: 40vh;
+}
+
+#banner img{
+    height: 30vh;
+}
+
+#textoBanner{
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+#corpo{
+    display: flex;
+    justify-content: center;
+    background-color: var(--fundo-escuro);
+    color: white;
+}
+#corpo h2{
+    font-size: 2rem;
+    padding-bottom: 10px;
+    position: relative;
+}
+#corpo h2::after{
+    content: ''; /* obrigatório */
+    position: absolute; /* obrigatório */
+    bottom: 0;
+    left: -10%;
+    width: 120%;
+    height: 2px;
+    background-color: red;
+}
