@@ -1,5 +1,6 @@
 import Footer from "@/components/footer/footer"
 import Header from "@/components/header/header"
+import ListaProduto from "@/components/lista_produto/lista_produto"
 import style from "./home.module.css"
 
 const Home = () => {
@@ -7,7 +8,7 @@ const Home = () => {
         <>
             <Header />
             <section id={style.banner}>
-                
+
                 <div id={style.textoBanner}>
                     <h1>Conheça nossos jogos</h1>
                     <p>Navegue por títulos de todas as gerações, descubra plataformas,
@@ -19,8 +20,23 @@ const Home = () => {
 
             <section id={style.corpo}>
                 <h2>Catalogo de jogos</h2>
-                <label htmlFor="pesquisa"></label>
+                <div id={style.pesquisa}>
+                    <label htmlFor="pesquisa"></label>
+                    <input type="text" placeholder="Digite o jogo buscado" />
+                    <select multiple value={"Categoria"} id="categoria"></select>
+                    <select multiple value={"Classificação"}></select>
+                </div>
+
+
             </section>
+            <div id={style.cardJogo}>
+                <ListaProduto />
+                <ListaProduto />
+                <ListaProduto />
+                <ListaProduto />
+                <ListaProduto />
+                <ListaProduto />
+            </div>
             <Footer />
         </>
     )

@@ -1,0 +1,7 @@
+#botao{
+    display: flex;
+    text-align: center;
+    background-color: var(--vermelho);
+    text-decoration: none;
+    width: 50%;
+}

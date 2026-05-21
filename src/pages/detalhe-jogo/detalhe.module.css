@@ -1,0 +1,20 @@
+#bannerJogo{
+    display: flex;
+    background-color: var(--fundo-escuro);
+    flex-direction: column;
+    align-items: center;
+    height: 47vh;
+}
+#bannerJogo h1{
+    color: white;
+    position: relative;
+}
+#bannerJogo h1::after{
+    content: '';
+    position: absolute; 
+    bottom: 0;
+    left: -10%;
+    width: 120%;
+    height: 2px;
+    background-color: red;
+}
